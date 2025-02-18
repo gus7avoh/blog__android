@@ -15,6 +15,8 @@
 
 /* Estilização geral */
 body {
+    display: fixed;
+    gap: 30px;
     background-color: var(--back);
     padding: 10px;
     font-family: var(--fonte-padrao);
@@ -89,7 +91,7 @@ main {
     margin: auto;
     min-width: 300px;
     max-width: 1000px;
-    padding: 50px 15px 15px 15px;
+    padding: 15px;
     margin-top: 275px;
     min-height: 1000px;
     height: auto;
