@@ -3,6 +3,7 @@
     font-family: Android;
     src: url("src/fontes/IDroid\ Bold.otf");
 }
+
 :root {
     --back: #F6EDDC;
     --lowheader: #2f8d7292;
@@ -68,11 +69,6 @@ header h2 {
     padding: 5px;
     transition: color 0.3s;
 }
-@media (max-width: 250px) {
-    main {
-        margin-top: 330px;
-    }
-}
 main {
     margin-left: auto;
     margin-right: auto;
@@ -85,6 +81,11 @@ main {
     box-shadow: 2px 2px 5px 2px black;
     border-radius: 5px;
   
+}
+@media (max-width: 400px) {
+    main {
+        margin-top: 340px /*!important  - forçar a utilização da margem*/;
+    }
 }
 main p {
     color: black;
