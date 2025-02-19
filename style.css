@@ -163,6 +163,7 @@ abbr {
 }
 .list__box > ul > li {
     list-style: none;
+    margin: auto;
 }
 footer{
     display: flex;
