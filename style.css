@@ -3,8 +3,6 @@
     font-family: Android;
     src: url("src/fontes/IDroid\ Bold.otf");
 }
-
-/* Variáveis globais */
 :root {
     --back: #F6EDDC;
     --lowheader: #2f8d7292;
@@ -12,17 +10,11 @@
     --animation: #13936f;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
-
-/* Estilização geral */
 body {
-    display: fixed;
-    gap: 30px;
     background-color: var(--back);
     padding: 10px;
     font-family: var(--fonte-padrao);
 }
-
-/*esse gradiente, porem fixndo a main no header */
 header {
     background-image: linear-gradient(to bottom, var(--lowheader), transparent ); 
     top: 0;
@@ -32,14 +24,12 @@ header {
     text-align: center;
     padding-bottom: 30px;
 }
-
 header h1{
     font-family: Android;
     color: var(--title);
     font-weight: bolder;
     font-size: 3em;
 }
-
 header h2 {
     font-size: large;
     color: var(--title);
@@ -49,12 +39,9 @@ header h2 {
     margin: auto;
     padding-bottom: 5px;
 }
-
-/* Navegação */
 .navigation {
     padding: 15px;
 }
-
 .navigation ul {
     list-style: none;
     display: flex;
@@ -63,36 +50,35 @@ header h2 {
     padding: 0;
     margin: 0;
 }
-
 .navigation li {
     display: inline;
     padding: 0;
     margin: 0;
 }
-
 .navigation a {
     text-decoration: none;
     color: var(--title);
     font-size: 18px;
     font-weight: bold; 
 }
-
 .navigation a:hover {
     color: white;
     background-color: #2f8d724c;
     border-radius: 20px;
     padding: 5px;
     transition: color 0.3s;
-    /*transition-duration: ;*/
 }
-
-/* Conteúdo principal */
+@media (max-width: 250px) {
+    main {
+        margin-top: 330px;
+    }
+}
 main {
-    margin: auto;
-    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 260px; 
     max-width: 1000px;
     padding: 15px;
-    margin-top: 275px;
     min-height: 1000px;
     height: auto;
     background-color: white;
@@ -100,7 +86,6 @@ main {
     border-radius: 5px;
   
 }
-
 main p {
     color: black;
     font-size: 1.1em;
@@ -108,39 +93,29 @@ main p {
     text-align: justify;
     line-height: 1.5em;
 }
-
-/* Títulos personalizados */
 .main__title, .sub__title {
     color: var(--title);
     font-weight: bolder;
     font-family: Android, cursive;
 }
-
-/* Links */
 main a, footer a {
     text-decoration: none;
     color: var(--animation);
 }
-
 main a:hover, footer a:hover{
     color: var(--title);
     text-decoration: underline;
 }
-
 main .externo::after{
     content: '\00A0\1F517';
 }
-
-
 article picture{
     margin: auto;
 }
-/* Imagens */
 img {
     width: 100%;
     margin: auto;
 }
-
 .video {
     margin: auto;
     display: flex;
@@ -148,22 +123,17 @@ img {
     justify-content: center;
     padding: 10px;
 }
-
 .video #video__android{
     width: 100%;
     border-radius: 10px;
 }
-
-/* Seção "Saiba mais" */
 .know__more {
     background-color: lightgray;
     border-radius: 10px;
 }
-
 .know__more > p {
     padding: 10px;
 }
-
 h3 {
     background: linear-gradient(to bottom, grey, transparent) ;
     padding: 10px 5px;
@@ -174,27 +144,21 @@ h3 {
     font-weight: bolder;
     margin-top: 0;
 }
-
 .verification__img {
     width: 12px;
     height: 12px;
 }
-
 abbr {
     text-decoration: none;
 }
-
-/* Lista centralizada */
 .list__box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .list__box > ul > li {
     list-style: none;
 }
-
 footer{
     display: flex;
     align-items: center;
