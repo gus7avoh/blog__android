@@ -82,7 +82,7 @@ main {
     border-radius: 5px;
   
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
     main {
         margin-top: 340px /*!important  - forçar a utilização da margem*/;
     }
